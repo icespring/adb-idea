@@ -6,6 +6,7 @@
     <description><![CDATA[
         Adds the following ADB commands to Android Studio and Intellij:<br />
         <ul>
+            <li>Enable Baidu Ime</li>
             <li>ADB Uninstall App</li>
             <li>ADB Kill App</li>
             <li>ADB Start App</li>
@@ -202,6 +203,12 @@
                     text="ADB Grant Permissions"
                     description="Granting the runtime permissions of the current application">
             </action>
+            <add-to-group group-id="AndroidToolsGroup" anchor="first"/>
+            <action id="com.developerphil.adbidea.action.EnableImeAction"
+                class="com.developerphil.adbidea.action.EnableImeAction"
+                text="ADB Enable Baidu Ime"
+                description="Enable Baidu Ime by One Click">
+            </action>
 
             <action id="com.developerphil.adbidea.action.UninstallAction"
                     class="com.developerphil.adbidea.action.UninstallAction"
@@ -219,6 +226,7 @@
                     text="ADB Start App"
                     description="Starts the current application">
             </action>
+            <add-to-group group-id="AndroidToolsGroup" anchor="first"/>
             <action id="com.developerphil.adbidea.action.RestartAction"
                     class="com.developerphil.adbidea.action.RestartAction"
                     text="ADB Restart App"

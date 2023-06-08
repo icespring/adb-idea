@@ -15,7 +15,8 @@ class QuickListAction : QuickSwitchSchemeAction(), DumbAware {
         if (project == null) {
             return
         }
-
+        addAction("com.developerphil.adbidea.action.EnableImeAction", group)
+        group.addSeparator()
         addAction("com.developerphil.adbidea.action.UninstallAction", group)
         addAction("com.developerphil.adbidea.action.KillAction", group)
         addAction("com.developerphil.adbidea.action.StartAction", group)

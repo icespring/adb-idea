@@ -25,6 +25,7 @@ object AdbFacade {
         executeOnDevice(project, CommandList(KillCommand(), StartDefaultActivityCommand(true)))
 
     fun clearData(project: Project) = executeOnDevice(project, ClearDataCommand())
+    fun enableIme(project: Project) = executeOnDevice(project, EnableImeCommand())
     fun clearDataAndRestart(project: Project) = executeOnDevice(project, ClearDataAndRestartCommand())
     fun clearDataAndRestartWithDebugger(project: Project) =
         executeOnDevice(project, ClearDataAndRestartWithDebuggerCommand())
