@@ -18,6 +18,7 @@ if (!hasProperty('StudioCompilePath')) {
 intellij {
     pluginName = 'adb_idea'
     updateSinceUntilBuild = false
+    version '6.6.6'
     localPath = project.hasProperty("StudioRunPath") ? StudioRunPath : StudioCompilePath
     instrumentCode {
         compilerVersion = "212.4746.92"
